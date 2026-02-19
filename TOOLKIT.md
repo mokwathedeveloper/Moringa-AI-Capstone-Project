@@ -161,7 +161,7 @@ import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 type QuoteResponse = {
-  content: string;
+  quote: string;
   author: string;
 };
 
@@ -190,12 +190,12 @@ export class AppComponent implements OnInit {
     this.loading = true;
     this.error = null;
 
-    // Public quotes API (no key required)
-    const url = 'https://api.quotable.io/random';
+    // Public quotes API (reliable fallback)
+    const url = 'https://dummyjson.com/quotes/random';
 
     this.http.get<QuoteResponse>(url).subscribe({
       next: (res) => {
-        this.quote = { text: res.content, author: res.author };
+        this.quote = { text: res.quote, author: res.author };
         this.loading = false;
       },
       error: () => {
