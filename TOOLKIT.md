@@ -528,3 +528,25 @@ fetchQuote(): void {
 [3]: https://angular.dev/tools/cli/serve "Serving Angular apps for development"
 [4]: https://v17.angular.io/guide/standalone-components "Getting started with standalone components"
 [5]: https://nodejs.org/en/download "Download Node.js"
+
+
+---
+
+## 9) Bonus: Themed Hello World
+
+This project implements a **themed Hello World** as suggested in the bonus ideas. Instead of a plain "Hello World", the app:
+
+✅ **Fetches inspirational quotes** from a public API (DummyJSON)  
+✅ **Interactive UI** with a "New Quote" button for fresh content  
+✅ **Professional error handling** with user-friendly messages  
+✅ **Loading states** to show async operations in progress  
+✅ **Modern design** with clean CSS and responsive layout  
+
+**Why this is better than basic Hello World:**
+- Demonstrates real-world API integration
+- Shows proper state management (loading, error, success)
+- Implements user interaction (button clicks)
+- Uses TypeScript for type safety
+- Follows Angular best practices (standalone components, dependency injection)
+
+This themed approach makes the learning experience more engaging and practical than a static "Hello World" message.
